@@ -1,0 +1,32 @@
+@import "./constants/colors" as colors;
+@import "tailwindcss";
+
+@theme {
+  --color-background-blue: rgba(6, 23, 65, 1);
+  --color-red-arrow: rgba(244, 74, 40, 1);
+  --color-blue-arrow: rgba(105, 151, 170, 1);
+  --color-yellow-arrow: rgba(244, 196, 40, 1);
+  --color-green-line-menu: rgba(119, 223, 197, 1);
+  --color-white-letters: rgba(248, 250, 255, 1);
+  --color-gray-article-body: rgba(231, 231, 231, 1);
+  --color-border-article-body: rgba(214, 191, 163, 1);
+  --color-heart-icon: rgba(245, 5, 5, 1);
+  --color-person-icon: rgba(56, 111, 159, 1);
+  --color-white-back-ground: rgba(248, 250, 255, 1);
+  --color-yellow-mask-square: rgba(250, 245, 77, 0.4000000059604645);
+  --color-border-yellow-mark-square: rgba(214, 191, 163, 1);
+  --color-blue-faded-square: rgba(11, 11, 7, 0.4000000059604645);
+  --color-blue-faded-square: rgba(214, 191, 163, 1);
+  --color-purple-square: rgba(162, 40, 244, 0.4000000059604645);
+  --color-purple-faded-square: rgba(97, 49, 134, 0.4000000059604645);
+  --color-stroke-purple-light-square: rgba(119, 223, 197, 1);
+  --color-faded-main-square: rgba(0, 0, 0, 1);
+  --breakpoint-*: initial;
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 976px;
+  --font-size-*: initial;
+  --font-geist-krona-one: var(--font-geist-krona-one);
+  --font-weight-*: initial;
+  --font-geist-jura: var(--font-geist-jura);
+}
