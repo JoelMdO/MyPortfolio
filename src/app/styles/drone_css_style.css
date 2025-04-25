@@ -1,0 +1,68 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes flash {
+  from {
+    opacity: 0;
+    fill: rgba(105, 151, 170, 1);
+  }
+  50% {
+    opacity: 0.5;
+    fill: rgba(244, 196, 40, 1);
+  }
+  to {
+    opacity: 1;
+    fill: rgba(119, 223, 197, 1);
+  }
+}
+
+.circles {
+  animation: fadeIn 3s ease forwards, flash 1s infinite;
+  opacity: 0;
+}
+
+/* Initial animation: dots come from the bottom */
+.circles.dots {
+  animation: moveUp 2s ease forwards;
+  opacity: 0;
+}
+
+@keyframes moveUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Final phase: filled shape */
+.svg-shape.filled {
+  animation: fillShape 2s ease forwards;
+}
+
+@keyframes fillShape {
+  from {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.svg-shape-welcome path {
+  filter: drop-shadow(0 0 10px #bc13fe) drop-shadow(0 0 20px #ffff);
+}
