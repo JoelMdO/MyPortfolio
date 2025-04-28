@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Jura, Krona_One } from "next/font/google";
 import "./globals.css";
+import ThemeProvider from "../theme/theme-provider";
 
 const geistJura = Jura({
   variable: "--font-geist-jura",
@@ -24,11 +25,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistJura.variable} ${geistKronaOne.variable} antialiased`}
       >
+        {/* DARK LIGHT THEME*/}
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
         {children}
+        </ThemeProvider>
       </body>
     </html>
   );
