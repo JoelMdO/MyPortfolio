@@ -3,5 +3,11 @@
     "Neon-Green": "Wel",
     "Neon-White": "com",
     "Neon-Red": "e !!"
+  },
+
+  "About_me":{
+    "1": "From the skies to software engineering:",
+    "2" : "Where continuous improvement is my core philosophy.",
+    "3" : "I value Efficiency, Creativity and Ethical practices to identify areas of opportunity for impactful solutions."
   }
 }

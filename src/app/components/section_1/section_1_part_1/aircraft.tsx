@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
-import VaporTrailWithPlane from "./vapor_stream";
 
 interface AircraftStreamProps {
   type: string;

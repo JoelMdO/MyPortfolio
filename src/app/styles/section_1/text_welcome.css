@@ -1,4 +1,4 @@
-h2 {
+.welcome-h2 {
   font-size: 2.5rem;
   font-weight: bold; /* Optional: Make the text bold */
   font-family: var(--font-geist-jura);
@@ -9,12 +9,12 @@ h2 {
 
 /* text-shadow: [x-offset] [y-offset] [blur-radius] [color];*/
 
-span {
+.welcome-span {
   color: white;
-  text-shadow: 0 0 2px var(--red-arrow-neon-color),
-    0 0 5px var(--red-arrow-neon-color), 0 0 8px var(--red-arrow-neon-color),
-    0 0 13px var(--green-neon-color), 0 0 18px var(--green-neon-color),
-    0 0 23px var(--green-neon-color), 0 0 28px var(--green-neon-color);
+  text-shadow: 0 0 2px var(--color-red-arrow), 0 0 5px var(--color-red-neon),
+    0 0 8px var(--color-red-neon), 0 0 13px var(--color-green-neon),
+    0 0 18px var(--color-green-neon), 0 0 23px var(--color-green-neon),
+    0 0 28px var(--color-green-neon);
 }
 
 /* ----------------------------------------------
